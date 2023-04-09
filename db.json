@@ -1,0 +1,136 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Sách tiếng Việt",
+      "price": "1000",
+      "description": "Mọi lựa chọn đều giá trị. Mọi bước đi đều quan trọng. Cuộc sống vẫn diễn ra theo cách của nó, không phải theo cách của ta. Hãy kiên nhẫn. Tin tưởng. Hãy giống như người thợ cắt đá, đều đặn từng nhịp,...",
+      "image": "https://salt.tikicdn.com/ts/product/82/82/80/c542073200c6e95d3e89840b2f41ce2e.jpg",
+      "categoryId": "1"
+    },
+    {
+      "id": 2,
+      "name": "BÍ KÍP SỐNG SÓT NƠI CÔNG SỞ",
+      "price": "100000",
+      "description": "adu vip",
+      "image": "https://salt.tikicdn.com/ts/product/82/82/80/c542073200c6e95d3e89840b2f41ce2e.jpg",
+      "categoryId": "2"
+    },
+    {
+      "id": 3,
+      "name": "Chó sủa nhầm cây",
+      "price": "44444",
+      "description": "adu vip",
+      "image": "https://salt.tikicdn.com/ts/product/29/c6/6d/64243ee01d5a0786fdb3c3977ec9c63e.jpg",
+      "categoryId": "1"
+    },
+    {
+      "id": 4,
+      "name": "Sách tư duy - Kỹ năng sống",
+      "price": "4444444444",
+      "description": "adu vip",
+      "image": "https://salt.tikicdn.com/ts/product/fe/a7/bc/124b200ee6602ca58f69ad0e7f30e8d4.jpg",
+      "categoryId": "2"
+    },
+    {
+      "id": 5,
+      "name": "Sáng Tạo Không Giới Hạn",
+      "price": "96000",
+      "description": "vip",
+      "image": "https://salt.tikicdn.com/ts/product/57/44/86/19de0644beef19b9b885d0942f7d6f25.jpg",
+      "categoryId": "2"
+    },
+    {
+      "id": 6,
+      "name": "Sách A updated",
+      "price": "11111",
+      "description": "11111",
+      "image": "https://picsum.photos/200/300",
+      "categoryId": "2"
+    },
+    {
+      "id": 7,
+      "name": "aduvipaaa",
+      "price": "123",
+      "description": "123",
+      "image": "https://picsum.photos/200/300",
+      "categoryId": "2"
+    },
+    {
+      "name": "aduvip vcl",
+      "price": "10000",
+      "description": "adu",
+      "image": "https://picsum.photos/200/300",
+      "categoryId": "2",
+      "id": 8
+    },
+    {
+      "id": 9,
+      "name": "adu vip updated",
+      "price": "100000",
+      "description": "được của nó",
+      "image": "https://picsum.photos/200/300",
+      "categoryId": "4"
+    },
+    {
+      "name": "abcsussy",
+      "price": "101010",
+      "description": "adu vip ",
+      "image": "https://picsum.photos/200/300",
+      "categoryId": "3",
+      "id": 10
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "cate 1 updated 1"
+    },
+    {
+      "name": "cate 2",
+      "id": 2
+    },
+    {
+      "name": "cate 3",
+      "id": 3
+    },
+    {
+      "id": 4,
+      "name": "cate 4 updated"
+    },
+    {
+      "id": 5,
+      "name": "cate 5 updated"
+    }
+  ],
+  "users": [
+    {
+      "name": "aduvip",
+      "email": "aduvip@gmail.com",
+      "password": "123123",
+      "confirmPassword": "123123",
+      "id": 3
+    },
+    {
+      "name": "okepic",
+      "email": "okok@gmail.com",
+      "password": "123123",
+      "confirmPassword": "123123",
+      "id": 4
+    },
+    {
+      "name": "admin",
+      "email": "admin@gmail.com",
+      "password": "123123",
+      "confirmPassword": "123123",
+      "id": 5
+    },
+    {
+      "name": "thien123",
+      "email": "thien123@gmail.com",
+      "password": "14092003",
+      "confirmPassword": "14092003",
+      "id": 6
+    }
+  ]
+}
