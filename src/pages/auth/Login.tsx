@@ -60,7 +60,7 @@ const Login = () => {
             {
               required: true,
               message: "Hãy nhập vào input"
-            }
+            },{ whitespace: true, message: "Không được để khoảng trắng" },
           ]}
         >
           <Input.Password />

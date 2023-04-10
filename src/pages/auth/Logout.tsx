@@ -7,7 +7,6 @@ const Logout = () => {
     
     return <Navigate to= "/" />   
     
-    
 };
 
 export default Logout;

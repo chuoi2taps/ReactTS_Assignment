@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import {
   DesktopOutlined,
   FileOutlined,
@@ -13,6 +13,11 @@ import { Breadcrumb, Layout, Menu, theme } from 'antd';
 import { Link, Outlet } from 'react-router-dom';
 
 const { Header, Content, Footer, Sider } = Layout;
+
+
+interface User{
+  name:String
+}
 
 type MenuItem = Required<MenuProps>['items'][number];
 
@@ -30,6 +35,7 @@ function getItem(
   } as MenuItem;
 }
 
+
 const items: MenuItem[] = [
     getItem(<Link to={"/admin"}>Dashboard</Link>,"dashboard",<PieChartOutlined />),
     getItem("Management", "manage", <TeamOutlined />, [
@@ -39,19 +45,35 @@ const items: MenuItem[] = [
     ]),
     
 ];
-const items_nav:MenuItem[]=[
-  getItem(<Link to={"/"}>Go to Home</Link>, "Home", <HomeOutlined />),
-  getItem(<Link to={"/products"}>Go to Products</Link>, "products", <TeamOutlined />),
-  getItem("Tài khoản", "account", <TeamOutlined />, [
-    getItem(localStorage.getItem('userInfo') ? (<Link to="/logout">Đăng xuất</Link>) : (<Link to="/auth/login">Đăng nhập</Link>), "login", <UserOutlined/>),
-  ]),
-]
+
 
 const AdminLayout: React.FC = () => {
   const [collapsed, setCollapsed] = useState(false);
   const {
     token: { colorBgContainer },
   } = theme.useToken();
+
+  const [userInfo, setUserInfo] = useState<User|null>()
+  const logout = ()=>{
+    localStorage.removeItem('accessToken');
+    localStorage.removeItem('userInfo');
+    setUserInfo(null)
+  }
+  useEffect(() => {
+    if(localStorage.getItem('userInfo')){
+      setUserInfo(JSON.parse(localStorage.getItem('userInfo') as string))
+    }
+  },[])
+
+
+  const items_nav: MenuItem[] = [
+    getItem(<Link to={"/"}>Home</Link>, "home", <HomeOutlined />),
+    getItem(<Link to={"/products"}>Products</Link>, "products", <FileOutlined />),
+    getItem(<a style={{color:'yellow'}}>{userInfo?userInfo?.name:("Tài khoản")}</a>, "account", <TeamOutlined />, [
+      getItem(localStorage.getItem('userInfo') ? (<Link to="/" onClick={logout}>Đăng xuất</Link>) : (<Link to="/auth/login">Đăng nhập</Link>), "login", <UserOutlined/>),
+    ]),
+    
+  ];
 
   return (
     <Layout style={{ minHeight: '100vh' }}>

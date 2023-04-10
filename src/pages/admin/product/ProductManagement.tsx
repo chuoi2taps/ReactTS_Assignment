@@ -64,11 +64,6 @@ const ProductManagementPage = (props:IProps) => {
             render: (text)=><Image src={text} className='w-[50px] h-[50px]' width='50px' height='50px'/>
         },
         {
-            title: 'categoryID',
-            dataIndex: 'categoryId',
-            key: 'categoryId',
-        },
-        {
             title: 'Action',
             key: 'action',
             render: (record) => (
